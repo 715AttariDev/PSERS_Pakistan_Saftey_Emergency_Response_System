@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 const CallToAction = () => {
   return (
     <section className="w-full py-16 text-center">
@@ -19,12 +19,12 @@ const CallToAction = () => {
           Download the SERS app now and turn alerts into action — in seconds.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <Button>
-            Report Emergency
-          </Button>
-          <Button variant="outline">
-            How It Works
-          </Button>
+          <Link href='/report'  >
+          <Button className='cursor-pointer'>Report Emergency</Button></Link>
+          
+          <Link href='#how-it-works' >
+            <Button  className='cursor-pointer' variant="outline">How It Works</Button>
+          </Link>
         </div>
       </motion.div>
     </section>

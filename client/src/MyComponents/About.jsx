@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-[#161d1d]  text-foreground px-4">
+    <section id="about" className="py-20 bg-gray-100 dark:bg-[#161d1d]  text-foreground px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">

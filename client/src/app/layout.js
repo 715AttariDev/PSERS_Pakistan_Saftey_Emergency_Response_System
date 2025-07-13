@@ -3,6 +3,11 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Header from "@/MyComponents/Header";
+import {
+  ClerkProvider,
+  
+} from '@clerk/nextjs'
+import RootLayoutClient from "./RootLayoutClient";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,13 +22,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header/>
-          <main>{children}</main>
+          {/* <main>{children}</main> */}
+          <RootLayoutClient>{children}</RootLayoutClient>
         </ThemeProvider>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

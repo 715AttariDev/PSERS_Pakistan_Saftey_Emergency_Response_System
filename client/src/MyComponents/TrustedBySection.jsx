@@ -46,6 +46,7 @@ const TrustedBySection = () => {
                   fill={false}
                   width={0}
                   height={0}
+                  priority
                   sizes="100vw"
                   className="h-full w-auto object-contain opacity-80 grayscale 
              hover:grayscale-0 hover:opacity-100 
