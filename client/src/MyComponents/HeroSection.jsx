@@ -44,7 +44,7 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-4 cursor-pointer">
-            <Link href="/report">
+            <Link href="/report_emergency">
               <Button size="lg" className='cursor-pointer'>Report Emergency</Button>
             </Link>
             <Link href="#how-it-works">
